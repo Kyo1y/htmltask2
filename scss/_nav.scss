@@ -1,0 +1,71 @@
+.nav-container {
+    margin: 3rem;
+}
+.nav-container-items {
+    display: grid;
+    grid-template-columns: repeat(1, 8rem);
+    grid-template-rows: repeat(1, 7rem);
+}
+.nav-container-premium {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.premium-img {
+    max-width: 5rem;
+}
+.premium-p {
+    width: 7rem;
+    font-size: 0.6rem;
+}
+.premium-button {
+    font-size: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFC145;
+    height: 2.5rem;
+    width: 10rem;
+    font-weight: 600;
+}
+.premium-button::after {
+    content: url(../img/arrow-up-premium.svg);
+}
+.nav-container-name::before {
+    content: url(../img/cloud-nav.png);
+}
+.nav-container-dollar {
+    position: absolute;
+}
+.nav-container-links {
+    display: grid;
+    grid-template-columns: repeat(1,5rem);
+    grid-template-rows: repeat(6, 3rem);
+    align-items: center;
+}
+.invoices-container {
+    display: flex;
+    margin-left: 0.1rem;
+    gap: 1.3rem;
+}
+.nav-item {
+    text-transform: capitalize;
+}
+
+.list-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.overview-before{
+    filter: grayscale(100%) opacity(40%);
+}
+.nav-img {
+    width: auto;
+    max-width: 1.4rem;
+}
+.goals-img {
+    max-width: 1.6rem;
+    margin-left: -0.17rem;
+}
