@@ -1,0 +1,13 @@
+@media screen  and (max-width: 1920px) {
+    .nav-container-items {
+        grid-template-rows: repeat(1, 6rem);
+        padding-top: 0%;
+    }
+    .header {
+        height: 45rem;
+    }
+    .nav-container-premium {
+        margin-top: 3rem;
+
+    }
+}

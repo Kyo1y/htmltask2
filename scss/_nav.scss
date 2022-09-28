@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(1, 8rem);
     grid-template-rows: repeat(1, 7rem);
+    padding-top: 3rem;
 }
 .nav-container-premium {
     margin-top: 15rem;
@@ -13,12 +14,27 @@
     align-items: center;
     text-align: center;
 }
+.nav-container-logo {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+.cloud-nav {
+    width: 43px;
+    height: 28px;
+}
+.nav-name {
+    @include font;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0F4264;
+}
 .premium-img {
     max-width: 5rem;
 }
 .premium-p {
-    width: 7rem;
     font-size: 0.6rem;
+    @include font;
 }
 .premium-button {
     font-size: 0.8rem;
@@ -32,9 +48,7 @@
 .premium-button::after {
     content: url(../img/arrow-up-premium.svg);
 }
-.nav-container-name::before {
-    content: url(../img/cloud-nav.png);
-}
+
 .nav-container-dollar {
     position: absolute;
 }
@@ -48,6 +62,7 @@
     display: flex;
     margin-left: 0.1rem;
     gap: 1.3rem;
+    @include font;
 }
 .nav-item {
     text-transform: capitalize;
@@ -57,6 +72,7 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    @include font;
 }
 .overview-before{
     filter: grayscale(100%) opacity(40%);
@@ -68,4 +84,15 @@
 .goals-img {
     max-width: 1.6rem;
     margin-left: -0.17rem;
+}
+.nav-container-line-block {
+    width: 11rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-container-line {
+    width: 2px;
+    background-color: red;
+    height: 5rem;
+    height: 9rem;
 }

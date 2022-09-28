@@ -11,7 +11,11 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="reset.css")
     body 
-        .header
-            .nav-container
-                block nav
-                include _nav
+        header.header
+            .nav-bg-container
+                .nav-container
+                    block nav
+                    include _nav
+            .dividing-line-container 
+                block line
+                include _dividing-line
