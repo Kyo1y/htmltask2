@@ -1,31 +1,30 @@
 .nav-container {
-    margin: 3rem;
+    position: absolute;
+    grid-area: nav-container;
+
 }
 .nav-container-items {
     display: grid;
-    grid-template-columns: repeat(1, 8rem);
-    grid-template-rows: repeat(1, 7rem);
+    grid-template-columns: repeat(1, 10rem);
+    grid-template-rows: repeat(1, 4rem);
     padding-top: 3rem;
+    padding-left: 2rem;
 }
-.nav-container-premium {
-    margin-top: 15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+
 .nav-container-logo {
     display: flex;
     align-items: center;
     height: 2rem;
+    margin-left: 0.5rem;
+    gap: 0.8rem;
+    cursor: pointer;
 }
 .cloud-nav {
     width: 43px;
     height: 28px;
 }
 .nav-name {
-    @include font;
-    font-size: 1.1rem;
+    @include text("Raleway", 1.1rem);
     font-weight: 700;
     color: #0F4264;
 }
@@ -33,46 +32,96 @@
     max-width: 5rem;
 }
 .premium-p {
-    font-size: 0.6rem;
-    @include font;
+    @include text("Raleway", 0.6rem);
+    
+    width: 7.4rem;
+    line-height: 130%;
 }
 .premium-button {
-    font-size: 0.8rem;
+    @include text("Raleway", 0.8rem);
     border-radius: 10px;
     border: none;
     background-color: #FFC145;
     height: 2.5rem;
     width: 10rem;
     font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .premium-button::after {
     content: url(../img/arrow-up-premium.svg);
+    margin-left: 0.2rem;
+}
+.premium-button:hover {
+    background-color: white;
+    border-color: #FFC145;
+    color: #FFC145;
+    transition: 0.5s;
+}
+.nav-container-dollar-img {
+    position: absolute;
+    margin-left: 1.3rem;
+    margin-top: -0.2rem;
 }
 
-.nav-container-dollar {
-    position: absolute;
-}
+
+
 .nav-container-links {
     display: grid;
-    grid-template-columns: repeat(1,5rem);
+    grid-template-columns: repeat(1,10rem);
     grid-template-rows: repeat(6, 3rem);
     align-items: center;
+    text-transform: capitalize;
 }
+
 .invoices-container {
     display: flex;
     margin-left: 0.1rem;
     gap: 1.3rem;
-    @include font;
+    
+    cursor: pointer;
+    font-weight: 700;
+    color: #C7C7C7;
+    height: 2rem;
 }
+
+.settings-container {
+    gap: 1.2rem;
+    font-weight: 700;
+    color: #C7C7C7;
+    cursor: pointer;
+    height: 2rem;
+}
+
+.nav-container-premium {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    text-transform: capitalize;
+}
+
+.overview-container, .transactions-container, .cards-container, .goals-container{
+    gap: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    color: #C7C7C7;
+    height: 2rem;
+}
+
+
+
 .nav-item {
     text-transform: capitalize;
 }
 
 .list-item {
     display: flex;
-    gap: 1rem;
     align-items: center;
-    @include font;
+    padding-left: 1rem;
+    border-radius: 4px;
 }
 .overview-before{
     filter: grayscale(100%) opacity(40%);
@@ -85,14 +134,29 @@
     max-width: 1.6rem;
     margin-left: -0.17rem;
 }
-.nav-container-line-block {
-    width: 11rem;
-    display: flex;
-    justify-content: flex-end;
-}
-.nav-container-line {
-    width: 2px;
-    background-color: red;
+
+.below-gap {
     height: 5rem;
-    height: 9rem;
+    background-color: #F0F0F0;
 }
+.active {
+    background: #F0F7FF;
+    color:#197BBD;
+    & .nav-img {
+        filter: invert(35%) sepia(93%) saturate(546%) hue-rotate(162deg) brightness(97%) contrast(93%)
+    }
+    & .goals-img {
+        filter: invert(35%) sepia(93%) saturate(546%) hue-rotate(162deg) brightness(97%) contrast(93%)
+    }
+}
+.overview, .transactions, .cards, .invoices, .goals, .settings {
+    @include text("Lato", 0.875rem);
+}
+.dividing-line {
+    background-color: #F8F8F8;
+    height: 43rem;
+    width: 2px;
+    margin-left: 13.5rem;
+    display: inline-block;
+}
+

@@ -6,16 +6,43 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="reset.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-        link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet")
-        link(rel="stylesheet", href="reset.css")
+        link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600;700&display=swap" rel="stylesheet")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+        link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap' rel='stylesheet')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+        link(href='https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap' rel='stylesheet')
     body 
-        header.header
-            .nav-bg-container
-                .nav-container
-                    block nav
-                    include _nav
-            .dividing-line-container 
-                block line
-                include _dividing-line
+        .bg-container
+            .nav-container
+                block nav
+                include _nav
+            span.dividing-line 
+            .account-bar-container 
+                block account
+                include _account-bar
+            .card-info-container 
+                block card
+                include _card-info
+            .transactions-history-container 
+                block tranhistory 
+                include _transactions-history
+            .goals-block-container
+                block goals
+                include _goals-container
+            .outcome-statistics-container 
+                block outcome-statistics
+                include _outcome-statistics
+            .new-transactions-container 
+                block new-transactions 
+                include _new-transactions
+
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+        script(src="js/navbar.js") 
+        script(src="js/swiper.js") 
+        script(src="js/goals.js") 

@@ -1,0 +1,52 @@
+.account-bar-container {
+    display: flex;
+    
+    margin: 2.5rem;
+    height: 5rem;
+   
+    gap: 30rem;
+    width: 100%;
+    grid-area: account-bar-container;
+}
+.account-bar-container-user {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.account-bar-container-info {
+    line-height: 250%;
+}
+.user-name-container a{
+    text-decoration: none;
+    @include text("Raleway", 14px);
+}
+.info-text {
+    color: #AEAEAE;
+    font-family: "Raleway", san;
+}
+.info-title {
+    font-weight: 700;
+    @include text("Raleway", 2.5rem)
+}
+.user-img {
+    width: 3rem;
+    height: 3rem;
+    
+}
+.user-name {
+    color: black;
+    font-weight: 700;
+}
+.user-name:hover {
+    text-decoration: underline;
+}
+.user-state {
+    color: #AEAEAE;
+}
+.user-state:hover {
+    text-decoration: underline;
+}
+.info-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}

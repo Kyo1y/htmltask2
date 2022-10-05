@@ -1,0 +1,43 @@
+block card
+    .card-container
+        h2.card-container-title cards
+        // swiper
+        .image-slider.swiper-container 
+            .image-slider__wrapper.swiper-wrapper 
+                .image-slider__slide.swiper-slide
+                    .image-slider__image
+                        img(src="img/rectangle.png", alt="")
+                .image-slider__slide.swiper-slide
+                    .image-slider__image
+                        img(src="img/rectangle.png", alt="")
+            .swiper-button-prev.card-prev
+            .swiper-button-next.card-next
+        // swiper
+
+        img.payment-limit-img(src='img/limit-line.svg' alt='#')
+        .payment-limit-text
+            p.limit-title Weekly payment limit
+            p.limit-numbers $350.60 / $4000
+    span.card-dividing-line 
+    .money-balance-container 
+        .current-balance-container
+            .numbers-container
+                h3.dollar-sign $
+                h2.current-balance-numbers  2850.75
+            p.current-balance-text Current balance
+        .income-container
+            .numbers-container.numbers-container-income 
+                h3.dollar-sign $
+                h2.income-numbers  1500.50
+            p.income-text Income 
+        .outcome-container
+            .numbers-container.numbers-container-outcome 
+                h3.dollar-sign $
+                h2.outcome-numbers  350.60
+            p.outcome-text Outcome
+        .button-container 
+            label(class="switch")
+                input(type="checkbox")
+                span.slider 
+            
+            p.button-text Deactivate card

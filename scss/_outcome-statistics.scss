@@ -1,0 +1,8 @@
+.outcome-statistics-container {
+    grid-area: outcome-statistics;
+    margin-left: 3.2rem
+}
+.outcome-statistics-container-title {
+    @include text("raleway", 1.25rem);
+    font-weight: 600;
+}

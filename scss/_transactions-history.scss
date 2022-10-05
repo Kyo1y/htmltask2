@@ -1,0 +1,94 @@
+.transactions-history-container {
+    grid-area: trancontainer;
+    margin-left: 2rem;
+    width: 35rem;
+    height: 15rem;
+    border-radius: 2rem;
+    box-shadow: 1px 3px 3px 3px rgb(0, 0, 0, 0.1);
+}
+.transactions-history-title {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-weight: 600;
+    @include text("Raleway", 1.25rem)
+
+}
+.transactions-types {
+    display: grid;
+    grid-template-areas: "reciever-container type-container date-container amount-container";
+    grid-template-columns: 190px 110px 150px 53px;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    @include text("Raleway", 14px);
+}
+.reciever-container-main-title, .type-container-main-title, .date-container-main-title, .amount-container-main-title, .type-container-title, .date-container-title  {
+    color: #AEAEAE;
+}
+
+.reciever-container {
+    grid-area: reciever-container;
+    display: grid;
+    gap: 0.5rem;
+}
+.reciever-container-main-title {
+    margin-bottom: 0.8rem;
+}
+.reciever-container-title {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+}
+.tesco::before, .electromen::before, .fiorgio::before, .john::before {
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+.tesco::before {
+    content: url(../img/cart.svg);
+}
+.electromen::before {
+    content: url(../img/cart.svg);
+}
+.fiorgio::before  {
+    content: url(../img/fiorgio.svg);
+}
+.john::before {
+    content: url(../img/john.svg);
+}
+.type-container {
+    grid-area: type-container;
+    display: grid;
+    gap: 0.8rem;
+}
+.type-container-main-title {
+    margin-bottom: 0.1rem;
+}
+
+
+.date-container {
+    grid-area: date-container;
+    display: grid;
+    gap: 0.8rem;
+}
+.date-container-main-title {
+    margin-bottom: 0.1rem;
+}
+
+
+.amount-container {
+    grid-area: amount-container;
+    display: grid;
+    gap: 0.8rem;
+}
+
+.amount-container-title {
+    text-align: end;
+    font-weight: 600;
+}
+
+
+.types-dividing-line {
+    background-color: #E8E8E8;
+    height: 1px;
+    width: 32rem;
+}

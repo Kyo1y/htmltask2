@@ -1,31 +1,32 @@
 block nav 
     .nav-container-items 
         .nav-container-logo
-            img(src="img/dollarSign.svg", alt="", class="nav-container-dollar")
+            img(src="img/dollarSign.svg", alt="", class="nav-container-dollar-img")
             img(src="img/cloud-nav.png", alt="", class="cloud-nav")
             h2.nav-name cloudcash
-        .nav-container-links.nav-item  
-                .overview-container.list-item
-                    img(src="img/overview-before.svg", alt="",class="overview-before", class="nav-img")
+        .nav-container-links
+                .overview-container.list-item.active
+                    img(src="img/overview-before.svg", alt="overview-img",class="overview-before", class="nav-img")
                     p.overview overview 
                 .transactions-container.list-item
-                    img(src="img/transactions-before.svg", alt="", class="nav-img")
+                    img(src="img/transactions-before.svg", alt="transactions-img", class="nav-img")
                     p.transactions transactions 
                 .cards-container.list-item
-                    img(src="img/cards-before.svg", alt="", class="nav-img")
+                    img(src="img/cards-before.svg", alt="cards-img", class="nav-img")
                     p.cards cards 
-                .invoices-container
-                    img(src="img/invoices-before.svg", alt="", class="nav-img")
+                .invoices-container.list-item
+                    img(src="img/invoices-before.svg", alt="invoices-img", class="nav-img")
                     p.invoices invoices 
                 .goals-container.list-item
-                    img(src="img/goals-before.svg", alt="", class="goals-img")
+                    img(src="img/goals-before.svg", alt="goals-img", class="goals-img")
                     p.goals goals 
                 .settings-container.list-item
-                    img(src="img/settings-before.svg", alt="", class="nav-img")
+                    img(src="img/settings-before.svg", alt="settings-img", class="nav-img")
                     p.settings settings 
-        .nav-container-premium.nav-item 
-            img(src="img/premium-img.svg", alt="", class="premium-img")
-            p.premium-p Give your money 
-            p.premium-p awesome space in cloud
-            button.premium-button Upgrade to premium
+        .nav-container-premium
+            img(src="img/premium-img.svg", alt="premium-img", class="premium-img")
+            p.premium-p Give your money awesome space in cloud
+            a(href="file:///C:/Users/GATEWAY/OneDrive/Рабочий%20стол/task2/index.html") 
+                button.premium-button Upgrade to premium
+            
     

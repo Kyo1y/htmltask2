@@ -1,0 +1,83 @@
+.goals-block-container {
+    grid-area: goals-cont;
+    margin-top: 2.7rem;
+    margin-left: 1.5rem;
+    width: 31rem;
+    height: 12rem;
+}
+.goals-wrapper {
+    width: 32rem;
+    margin-left: 1rem;
+}
+.goals-title-container {
+    display: flex;
+    align-items: center;
+    @include text("Raleway", 1.25rem);
+    font-weight: 600;
+    gap: 0.3rem;
+    margin-left: 1.3rem;
+}
+.plus-circle {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}
+// swiper
+.goals-swiper {
+    overflow: hidden;
+    height: 11rem;
+}
+
+.goals-slide {
+    width: 31rem !important;
+    display: flex;
+    gap: 1rem;
+}
+.goals-block {
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 28px;
+    background-color: #FFFFFF !important;
+    box-shadow: 1px 3px 3px 3px rgb(0, 0, 0, 0.1);
+}
+.holidays-content, .renovation-content, .xbox-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.3rem;
+    margin-top: 0.8rem;
+}
+.goals-block-img {
+    margin-top: 2rem;
+    width: 30px;
+    height: 25px;
+}
+.goals-block-money-goal {
+    @include text("lato", 1.5rem);
+    font-weight:600;
+    color: #696969
+}
+.goals-block-date {
+    @include text("raleway", 0.875rem);
+    color: #AEAEAE;
+}
+.goals-block-title {
+    @include text("raleway", 1.25rem);
+}
+
+.goals-swiper .swiper-button-disabled::after {
+    display: none;
+}
+.goals-next::after, .goals-prev::after{
+    font-size: 25px !important;
+    color: #197BBD;
+}
+.goals-prev::after {
+    margin-right: 2.15rem;
+    position: absolute;
+}
+.goals-next::after {
+    margin-left: 2.19rem;
+}

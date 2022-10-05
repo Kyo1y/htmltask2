@@ -6,50 +6,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&amp;display=swap" rel="stylesheet">
   </head>
   <body> 
-    <header class="header">
-      <div class="nav-bg-container">
-        <div class="nav-container">
-          <div class="nav-container-items"> 
-            <div class="nav-container-logo"><img class="nav-container-dollar" src="img/dollarSign.svg" alt=""><img class="cloud-nav" src="img/cloud-nav.png" alt="">
-              <h2 class="nav-name">cloudcash</h2>
+    <div class="bg-container">
+      <div class="nav-container">
+        <div class="nav-container-items"> 
+          <div class="nav-container-logo"><img class="nav-container-dollar-img" src="img/dollarSign.svg" alt=""><img class="cloud-nav" src="img/cloud-nav.png" alt="">
+            <h2 class="nav-name">cloudcash</h2>
+          </div>
+          <div class="nav-container-links">
+            <div class="overview-container list-item active"><img class="overview-before nav-img" src="img/overview-before.svg" alt="overview-img">
+              <p class="overview">overview </p>
             </div>
-            <div class="nav-container-links nav-item"> 
-              <div class="overview-container list-item"><img class="overview-before nav-img" src="img/overview-before.svg" alt="">
-                <p class="overview">overview </p>
+            <div class="transactions-container list-item"><img class="nav-img" src="img/transactions-before.svg" alt="transactions-img">
+              <p class="transactions">transactions </p>
+            </div>
+            <div class="cards-container list-item"><img class="nav-img" src="img/cards-before.svg" alt="cards-img">
+              <p class="cards">cards </p>
+            </div>
+            <div class="invoices-container list-item"><img class="nav-img" src="img/invoices-before.svg" alt="invoices-img">
+              <p class="invoices">invoices </p>
+            </div>
+            <div class="goals-container list-item"><img class="goals-img" src="img/goals-before.svg" alt="goals-img">
+              <p class="goals">goals </p>
+            </div>
+            <div class="settings-container list-item"><img class="nav-img" src="img/settings-before.svg" alt="settings-img">
+              <p class="settings">settings </p>
+            </div>
+          </div>
+          <div class="nav-container-premium"><img class="premium-img" src="img/premium-img.svg" alt="premium-img">
+            <p class="premium-p">Give your money awesome space in cloud</p><a href="file:///C:/Users/GATEWAY/OneDrive/Рабочий%20стол/task2/index.html"> 
+              <button class="premium-button">Upgrade to premium</button></a>
+          </div>
+        </div>
+      </div><span class="dividing-line"> </span>
+      <div class="account-bar-container"> 
+        <div class="account-bar-container-info">
+          <h1 class="info-title">Weekly sumup</h1>
+          <p class="info-text">Get summary of your weekly online transactions here.</p>
+        </div>
+        <div class="account-bar-container-user"> <img class="mail-img info-img" src="img/mail.svg" alt="mail-img"><img class="bell-img info-img" src="img/bell.svg" alt="bell-img"><img class="user-img" src="img/user.png" alt="user-img">
+          <div class="user-name-container"><a href="file:///C:/Users/GATEWAY/OneDrive/Рабочий%20стол/task2/index.html"> 
+              <p class="user-name">Andrew </p></a><a href="file:///C:/Users/GATEWAY/OneDrive/Рабочий%20стол/task2/index.html"> 
+              <p class="user-state">Admin account </p></a></div>
+        </div>
+      </div>
+      <div class="card-info-container"> 
+        <div class="card-container">
+          <h2 class="card-container-title">cards</h2>
+          <!-- swiper-->
+          <div class="image-slider swiper-container"> 
+            <div class="image-slider__wrapper swiper-wrapper"> 
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image"><img src="img/rectangle.png" alt=""></div>
               </div>
-              <div class="transactions-container list-item"><img class="nav-img" src="img/transactions-before.svg" alt="">
-                <p class="transactions">transactions </p>
-              </div>
-              <div class="cards-container list-item"><img class="nav-img" src="img/cards-before.svg" alt="">
-                <p class="cards">cards </p>
-              </div>
-              <div class="invoices-container"><img class="nav-img" src="img/invoices-before.svg" alt="">
-                <p class="invoices">invoices </p>
-              </div>
-              <div class="goals-container list-item"><img class="goals-img" src="img/goals-before.svg" alt="">
-                <p class="goals">goals </p>
-              </div>
-              <div class="settings-container list-item"><img class="nav-img" src="img/settings-before.svg" alt="">
-                <p class="settings">settings </p>
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image"><img src="img/rectangle.png" alt=""></div>
               </div>
             </div>
-            <div class="nav-container-premium nav-item"> <img class="premium-img" src="img/premium-img.svg" alt="">
-              <p class="premium-p">Give your money </p>
-              <p class="premium-p">awesome space in cloud</p>
-              <button class="premium-button">Upgrade to premium</button>
+            <div class="swiper-button-prev card-prev"></div>
+            <div class="swiper-button-next card-next"></div>
+          </div>
+          <!-- swiper--><img class="payment-limit-img" src="img/limit-line.svg" alt="#">
+          <div class="payment-limit-text">
+            <p class="limit-title">Weekly payment limit</p>
+            <p class="limit-numbers">$350.60 / $4000</p>
+          </div>
+        </div><span class="card-dividing-line"> </span>
+        <div class="money-balance-container"> 
+          <div class="current-balance-container">
+            <div class="numbers-container">
+              <h3 class="dollar-sign">$</h3>
+              <h2 class="current-balance-numbers"> 2850.75</h2>
             </div>
+            <p class="current-balance-text">Current balance</p>
+          </div>
+          <div class="income-container">
+            <div class="numbers-container numbers-container-income"> 
+              <h3 class="dollar-sign">$</h3>
+              <h2 class="income-numbers"> 1500.50</h2>
+            </div>
+            <p class="income-text">Income </p>
+          </div>
+          <div class="outcome-container">
+            <div class="numbers-container numbers-container-outcome"> 
+              <h3 class="dollar-sign">$</h3>
+              <h2 class="outcome-numbers"> 350.60</h2>
+            </div>
+            <p class="outcome-text">Outcome</p>
+          </div>
+          <div class="button-container"> 
+            <label class="switch">
+              <input type="checkbox"><span class="slider"> </span>
+            </label>
+            <p class="button-text">Deactivate card</p>
           </div>
         </div>
       </div>
-      <div class="dividing-line-container"> 
-        <div class="nav-container-line-block"><span class="nav-container-line"></span></div>
+      <div class="transactions-history-container"> 
+        <h2 class="transactions-history-title">Transactions history </h2>
+        <div class="transactions-types"> 
+          <div class="reciever-container"> 
+            <p class="reciever-container-main-title">Reciever</p>
+            <p class="reciever-container-title tesco">Tesco Market </p>
+            <div class="types-dividing-line"></div>
+            <p class="reciever-container-title electromen">ElectronMen Market </p>
+            <div class="types-dividing-line"></div>
+            <p class="reciever-container-title fiorgio">Fiorgio Restaurant </p>
+            <div class="types-dividing-line"></div>
+            <p class="reciever-container-title john">John Mathew Kayne </p>
+            <div class="types-dividing-line"></div>
+          </div>
+          <div class="type-container"> 
+            <p class="type-container-main-title">Type</p>
+            <p class="type-container-title">Shopping </p>
+            <p class="type-container-title">Shopping</p>
+            <p class="type-container-title">Food</p>
+            <p class="type-container-title">Sport</p>
+          </div>
+          <div class="date-container"> 
+            <p class="date-container-main-title">Date</p>
+            <p class="date-container-title">13 Dec 2020</p>
+            <p class="date-container-title">14 Dec 2020</p>
+            <p class="date-container-title">07 Dec 2020</p>
+            <p class="date-container-title">06 Dec 2020</p>
+          </div>
+          <div class="amount-container"> 
+            <p class="amount-container-main-title">Amount</p>
+            <p class="amount-container-title">$75.67</p>
+            <p class="amount-container-title">$250.00</p>
+            <p class="amount-container-title">$19.50</p>
+            <p class="amount-container-title">$350</p>
+          </div>
+        </div>
       </div>
-    </header>
+      <div class="goals-block-container">
+        <div class="goals-title-container">
+          <h2 class="goals-title">Goals </h2><a href="#"> <img class="plus-circle" src="img/plus-circle.svg" alt=""></a>
+        </div>
+        <div class="goals-swiper-container"> 
+          <div class="swiper goals-swiper"> 
+            <div class="swiper-wrapper goals-wrapper"> 
+              <div class="swiper-slide goals-slide"> 
+                <div class="goals-block goals-block-holidays"> 
+                  <div class="holidays-content">
+                    <h2 class="goals-block-money-goal">$ 550</h2>
+                    <p class="goals-block-date">12/20/20</p><img class="goals-block-img" src="img/mountain.svg" alt="mountain image">
+                    <h2 class="goals-block-title">Holidays</h2>
+                  </div>
+                </div>
+                <div class="goals-block goals-block-renovaiton">
+                  <div class="renovation-content">
+                    <h2 class="goals-block-money-goal">$ 200</h2>
+                    <p class="goals-block-date">12/20/20</p><img class="goals-block-img" src="img/renovation.svg" alt="renovation image">
+                    <h2 class="goals-block-title">Renovation</h2>
+                  </div>
+                </div>
+                <div class="goals-block goals-block-xbox">
+                  <div class="xbox-content">
+                    <h2 class="goals-block-money-goal">$ 820</h2>
+                    <p class="goals-block-date">12/20/20</p><img class="goals-block-img" src="img/xbox.svg" alt="xbox image">
+                    <h2 class="goals-block-title">Xbox</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide goals-slide">
+                <div class="goals-block goals-block-holidays"> 
+                  <div class="holidays-content">
+                    <h2 class="goals-block-money-goal">$ 550</h2>
+                    <p class="goals-block-date">12/20/20</p><img class="goals-block-img" src="img/mountain.svg" alt="mountain image">
+                    <h2 class="goals-block-title">Holidays</h2>
+                  </div>
+                </div>
+                <div class="goals-block goals-block-renovaiton">
+                  <div class="renovation-content">
+                    <h2 class="goals-block-money-goal">$ 200</h2>
+                    <p class="goals-block-date">12/20/20</p><img class="goals-block-img" src="img/renovation.svg" alt="renovation image">
+                    <h2 class="goals-block-title">Renovation</h2>
+                  </div>
+                </div>
+                <div class="goals-block goals-block-xbox">
+                  <div class="xbox-content">
+                    <h2 class="goals-block-money-goal">$ 820</h2>
+                    <p class="goals-block-date">12/20/20</p><img class="goals-block-img" src="img/xbox.svg" alt="xbox image">
+                    <h2 class="goals-block-title">Xbox</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev goals-prev"></div>
+            <div class="swiper-button-next goals-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="outcome-statistics-container"> 
+        <h2 class="outcome-statistics-container-title">Outcome Statistics </h2>
+      </div>
+      <div class="new-transactions-container"> 
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/navbar.js"> </script>
+    <script src="js/swiper.js"> </script>
+    <script src="js/goals.js"> </script>
   </body>
 </html>
