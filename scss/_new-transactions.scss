@@ -1,0 +1,128 @@
+.new-transactions-container {
+    grid-area: new-transactions;
+    margin-left: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 1px 3px 3px 3px rgb(0, 0, 0, 0.1);
+    width: 22rem;
+    height: 8rem;
+    border-radius: 24px;
+}
+.new-transactions-title {
+    margin-top: 0.65rem;
+    margin-left: 0.6rem;
+    @include text("raleway", 1.25rem);
+    font-weight: 600;
+}
+.new-transactions-people-container{
+    display: grid;
+    grid-template-areas: 
+    "ann-img monica-img john-img mike-img mia-img plus-circle-people-img"
+    "ann-name monica-name john-name mike-name mia-name add-new"
+    ;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.ann-img {
+    grid-area: ann-img;
+}
+.monica-img {
+    grid-area: monica-img;
+}
+.john-img {
+    grid-area: john-img;
+}
+.mike-img {
+    grid-area: mike-img;
+}
+.mia-img {
+    grid-area: mia-img;
+}
+.plus-circle-people-img {
+    grid-area: plus-circle-people-img;
+    margin-top: 0.6rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+
+}
+
+
+
+.name-text {
+    @include text("raleway", 0.75rem);
+    margin-top: 0.1rem;
+}
+.ann-name {
+    grid-area: ann-name;
+}
+.monica-name {
+    grid-area: monica-name;
+}
+.john-name {
+    grid-area: john-name;
+}
+.mike-name {
+    grid-area: mike-name;
+}
+.mia-name {
+    grid-area: mia-name;
+}
+.add-new {
+    grid-area: add-new;
+}
+.new-transactions-label, input {
+    position: relative;
+    display: block;
+    padding-right: 6px;
+    box-sizing: border-box;
+}
+.new-transactions-label::after {
+    content: "" attr(dollar-sign);
+    position: absolute;
+    left: 11.9rem;
+    bottom: 0.3rem;
+    @include text('lato', 1.23rem);
+    color:#C7C7C7;
+}
+.new-transactions-input-amount::-webkit-outer-spin-button,
+.new-transactions-input-amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+.new-transactions-input-amount::-webkit-input-placeholder {
+    color: #C7C7C7;
+}
+.new-transactions-input-amount {
+    border-radius: 7px;
+    width: 12.3rem;
+    height: 1.8rem;
+    @include text("lato", 1.2rem);
+    font-weight: 500;
+    border-color: #197BDD;
+    margin-left: 0.7rem;
+    margin-top: 0.1rem;
+}
+.send-money-container {
+    display: flex;
+    margin-top: 0.2rem;
+}
+.send-transfer-button {
+    border: none;
+    transition: .4s;
+
+    border-radius: 12px;
+    background-color: #FFC145;
+    @include text("quicksand", 0.75rem);
+    cursor: pointer;
+    width: 8rem;
+    height: 1.85rem;
+}
+.send-transfer-button::after {
+    content: url(../img/send-transfer-arrow.png);
+    margin-left: 0.1rem;
+
+}
+.send-transfer-button:hover{
+    box-shadow: 1px 2px 2px 2px rgb(0, 0, 0, 0.1);
+}

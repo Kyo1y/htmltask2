@@ -1,6 +1,7 @@
 .transactions-history-container {
     grid-area: trancontainer;
     margin-left: 2rem;
+    margin-top: 4rem;
     width: 35rem;
     height: 15rem;
     border-radius: 2rem;
@@ -42,6 +43,7 @@
     background-color: #EFEFEF;
     border-radius: 4px;
     margin-right: 0.5rem;
+    padding: 0.15rem;
 }
 .tesco::before {
     content: url(../img/cart.svg);

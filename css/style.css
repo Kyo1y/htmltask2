@@ -12,8 +12,8 @@ html {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 15rem 38rem;
-  grid-template-rows: 100px;
-  grid-template-areas: "nav-container account-bar-container account-bar-container" "nav-container card-info-container goals-cont" "nav-container trancontainer outcome-statistics" "nav-container trancontainer outcome-statistics";
+  grid-template-rows: 100px 260px;
+  grid-template-areas: "nav-container account-bar-container account-bar-container account-bar-container" "nav-container card-info-container goals-cont goals-cont" "nav-container trancontainer outcome-statistics outcome-statistics" "nav-container trancontainer new-transactions get-great-loan";
 }
 
 .nav-container {
@@ -422,6 +422,10 @@ input:checked + .slider:before {
   background-color: #f4f9fd;
 }
 
+.card-title {
+  position: relative;
+}
+
 .swiper-container {
   overflow: hidden;
   width: 20rem;
@@ -458,6 +462,7 @@ input:checked + .slider:before {
 .transactions-history-container {
   grid-area: trancontainer;
   margin-left: 2rem;
+  margin-top: 4rem;
   width: 35rem;
   height: 15rem;
   border-radius: 2rem;
@@ -506,6 +511,7 @@ input:checked + .slider:before {
   background-color: #EFEFEF;
   border-radius: 4px;
   margin-right: 0.5rem;
+  padding: 0.15rem;
 }
 
 .tesco::before {
@@ -564,7 +570,7 @@ input:checked + .slider:before {
 .goals-block-container {
   grid-area: goals-cont;
   margin-top: 2.7rem;
-  margin-left: 1.5rem;
+  margin-left: 0.6rem;
   width: 31rem;
   height: 12rem;
 }
@@ -663,13 +669,332 @@ input:checked + .slider:before {
 
 .outcome-statistics-container {
   grid-area: outcome-statistics;
-  margin-left: 3.2rem;
+  margin-left: 2rem;
+  height: 10rem;
 }
 
 .outcome-statistics-container-title {
   font-family: "raleway";
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+.statistics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.statistics-shopping-container {
+  display: grid;
+  grid-template-columns: 3.75rem 23.75rem;
+  grid-template-areas: "oscart shopping-line shopping-percent" "oscart shopping-title shopping-percent";
+}
+
+.oscart {
+  background-color: #FFEADA;
+  padding: 0.65rem;
+  border-radius: 5px;
+  grid-area: oscart;
+}
+
+.shopping-progress-line {
+  grid-area: shopping-line;
+}
+
+.shopping-title {
+  grid-area: shopping-title;
+}
+
+.shopping-progress-line, .electronics-progress-line, .travels-progress-line {
+  margin-top: 0.3rem;
+}
+
+.shopping-title, .electronics-title, .travels-title {
+  margin-top: 0.2rem;
+  font-family: "raleway";
+  font-size: 0.875rem;
+}
+
+.shopping-percent, .electronics-percent, .travels-percent {
+  grid-area: shopping-percent;
+  font-family: "lato";
+  font-size: 1.5rem;
+}
+
+.statistics-electronics-container {
+  display: grid;
+  grid-template-columns: 3.75rem 23.75rem;
+  grid-template-areas: "automobile electronics-line electronics-percent" "automobile electronics-title electronics-percent";
+}
+
+.automobile {
+  background-color: #DDF9E4;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  padding-left: 0.65rem;
+  padding-right: 0.54rem;
+  border-radius: 5px;
+  grid-area: automobile;
+}
+
+.electronics-progress-line {
+  grid-area: electronics-line;
+}
+
+.electronics-title {
+  grid-area: electronics-title;
+}
+
+.electronics-percent {
+  grid-area: electronics-percent;
+}
+
+.statistics-travels-container {
+  display: grid;
+  grid-template-columns: 3.75rem 23.75rem;
+  grid-template-areas: "plane travels-line travels-percent" "plane travels-title travels-percent";
+}
+
+.travels-progress-line {
+  grid-area: travels-line;
+}
+
+.travels-title {
+  grid-area: travels-title;
+}
+
+.travels-percent {
+  grid-area: travels-percent;
+}
+
+.plane {
+  background-color: #E4F0FF;
+  padding: 0.65rem;
+  border-radius: 5px;
+  grid-area: plane;
+}
+
+.new-transactions-container {
+  grid-area: new-transactions;
+  margin-left: 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  width: 22rem;
+  height: 8rem;
+  border-radius: 24px;
+}
+
+.new-transactions-title {
+  margin-top: 0.65rem;
+  margin-left: 0.6rem;
+  font-family: "raleway";
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.new-transactions-people-container {
+  display: grid;
+  grid-template-areas: "ann-img monica-img john-img mike-img mia-img plus-circle-people-img" "ann-name monica-name john-name mike-name mia-name add-new";
+  justify-content: space-around;
+  text-align: center;
+}
+
+.ann-img {
+  grid-area: ann-img;
+}
+
+.monica-img {
+  grid-area: monica-img;
+}
+
+.john-img {
+  grid-area: john-img;
+}
+
+.mike-img {
+  grid-area: mike-img;
+}
+
+.mia-img {
+  grid-area: mia-img;
+}
+
+.plus-circle-people-img {
+  grid-area: plus-circle-people-img;
+  margin-top: 0.6rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.name-text {
+  font-family: "raleway";
+  font-size: 0.75rem;
+  margin-top: 0.1rem;
+}
+
+.ann-name {
+  grid-area: ann-name;
+}
+
+.monica-name {
+  grid-area: monica-name;
+}
+
+.john-name {
+  grid-area: john-name;
+}
+
+.mike-name {
+  grid-area: mike-name;
+}
+
+.mia-name {
+  grid-area: mia-name;
+}
+
+.add-new {
+  grid-area: add-new;
+}
+
+.new-transactions-label, input {
+  position: relative;
+  display: block;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+
+.new-transactions-label::after {
+  content: "" attr(dollar-sign);
+  position: absolute;
+  left: 11.9rem;
+  bottom: 0.3rem;
+  font-family: "lato";
+  font-size: 1.23rem;
+  color: #C7C7C7;
+}
+
+.new-transactions-input-amount::-webkit-outer-spin-button,
+.new-transactions-input-amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.new-transactions-input-amount::-webkit-input-placeholder {
+  color: #C7C7C7;
+}
+
+.new-transactions-input-amount {
+  border-radius: 7px;
+  width: 12.3rem;
+  height: 1.8rem;
+  font-family: "lato";
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-color: #197BDD;
+  margin-left: 0.7rem;
+  margin-top: 0.1rem;
+}
+
+.send-money-container {
+  display: flex;
+  margin-top: 0.2rem;
+}
+
+.send-transfer-button {
+  border: none;
+  transition: 0.4s;
+  border-radius: 12px;
+  background-color: #FFC145;
+  font-family: "quicksand";
+  font-size: 0.75rem;
+  cursor: pointer;
+  width: 8rem;
+  height: 1.85rem;
+}
+
+.send-transfer-button::after {
+  content: url(../img/send-transfer-arrow.png);
+  margin-left: 0.1rem;
+}
+
+.send-transfer-button:hover {
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.get-great-loan-container {
+  grid-area: get-great-loan;
+  height: 8rem;
+  width: 7rem;
+  background-color: #ED654C;
+  margin-right: 5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cloud-one {
+  width: 4rem;
+  margin-top: 0.5rem;
+  margin-left: -1rem;
+}
+
+.cloud-two {
+  width: 3rem;
+  margin-bottom: 0.6rem;
+  margin-left: 0.3rem;
+}
+
+.ellipse-dollar-one, .ellipse-dollar-two {
+  width: 1.5rem;
+}
+
+.ellipse-dollar-container {
+  display: grid;
+  grid-template-columns: repeat(2, 15px);
+  grid-template-rows: repeat(2, 5px);
+  margin-left: 0.5rem;
+}
+
+.ellipse-dollar-one {
+  margin-top: 0.5rem;
+}
+
+.ellipse-dollar-two {
+  margin-left: 1rem;
+}
+
+.ellipse-dollar-text-one, .ellipse-dollar-text-two {
+  font-family: "quicksand";
+  font-size: 1.15rem;
+  position: absolute;
+  color: #ED654C;
+}
+
+.ellipse-dollar-text-one {
+  margin-left: 2.87rem;
+  margin-top: -0.45rem;
+  transform: rotate(-15deg);
+}
+
+.ellipse-dollar-text-two {
+  margin-left: 0.95rem;
+  transform: rotate(30deg);
+}
+
+.get-great-loan-title-container {
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  font-family: "raleway";
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.get-great-loan-title-two::after {
+  content: url(../img/get-great-loan-arrow.png);
+  margin-left: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

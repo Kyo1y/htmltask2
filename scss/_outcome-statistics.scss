@@ -1,8 +1,96 @@
 .outcome-statistics-container {
     grid-area: outcome-statistics;
-    margin-left: 3.2rem
+    margin-left: 2rem;
+    height:10rem;
 }
 .outcome-statistics-container-title {
     @include text("raleway", 1.25rem);
     font-weight: 600;
+}
+.statistics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.statistics-shopping-container {
+    display: grid;
+    grid-template-columns: 3.75rem 23.75rem;
+    grid-template-areas: 
+    "oscart shopping-line shopping-percent"
+    "oscart shopping-title shopping-percent"
+    ;
+}
+.oscart {
+    background-color: #FFEADA;
+    padding: 0.65rem;
+    border-radius: 5px;
+    grid-area: oscart;
+}
+.shopping-progress-line {
+    grid-area: shopping-line;
+}
+.shopping-title {
+    grid-area: shopping-title;
+}
+.shopping-progress-line, .electronics-progress-line, .travels-progress-line {
+    margin-top: 0.3rem;
+}
+.shopping-title, .electronics-title, .travels-title {
+    margin-top: 0.2rem;
+    @include text("raleway", 0.875rem);
+}
+.shopping-percent, .electronics-percent, .travels-percent{
+    grid-area: shopping-percent;
+    @include text('lato', 1.5rem);
+}
+.statistics-electronics-container {
+    display: grid;
+    grid-template-columns: 3.75rem 23.75rem;
+    grid-template-areas: 
+    "automobile electronics-line electronics-percent"
+    "automobile electronics-title electronics-percent"
+    ;
+}
+.automobile {
+    background-color: #DDF9E4;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    padding-left: 0.65rem;
+    padding-right: 0.54rem;
+    border-radius: 5px;
+    grid-area: automobile;
+}
+
+.electronics-progress-line{
+    grid-area: electronics-line;
+}
+.electronics-title {
+    grid-area: electronics-title;
+}
+.electronics-percent {
+    grid-area: electronics-percent;
+}
+.statistics-travels-container {
+    display: grid;
+    grid-template-columns: 3.75rem 23.75rem;
+    grid-template-areas: 
+    "plane travels-line travels-percent"
+    "plane travels-title travels-percent"
+    ;
+}
+.travels-progress-line {
+    grid-area: travels-line;
+}
+.travels-title {
+    grid-area: travels-title;
+}
+.travels-percent {
+    grid-area: travels-percent;
+}
+.plane {
+    background-color: #E4F0FF;
+    padding: 0.65rem;
+    border-radius: 5px;
+    grid-area: plane;
 }

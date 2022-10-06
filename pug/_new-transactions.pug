@@ -1,0 +1,21 @@
+block new-transacitons
+    h2.new-transactions-title New transactions
+    .new-transactions-people-container 
+        img(src="img/ann.svg", alt="ann", class="ann-img")
+        img(src="img/monica.svg", alt="monica", class="monica-img")
+        img(src="img/john-ellipse.svg", alt="john", class="john-img")
+        img(src="img/mike.svg", alt="mike", class="mike-img")
+        img(src="img/mia.svg", alt="mia", class="mia-img")
+        a(href="#") 
+            img(src="img/plus-circle-people.svg", alt="plus-circle", class="plus-circle-people-img")
+        p.ann-name.name-text Ann 
+        p.monica-name.name-text Monica 
+        p.john-name.name-text John 
+        p.mike-name.name-text Mike 
+        p.mia-name.name-text Mia 
+        p.add-new.name-text Add New 
+    .send-money-container
+        label(dollar-sign="$", class="new-transactions-label") 
+            input(type="number" placeholder="0" class="new-transactions-input-amount") 
+        a(href="#") 
+            button.send-transfer-button Send the transfer

@@ -1,0 +1,61 @@
+.get-great-loan-container {
+    grid-area: get-great-loan;
+    height:8rem;
+    width: 7rem;
+    background-color: #ED654C;
+    margin-right: 5rem;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cloud-one {
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+}
+.cloud-two {
+    width: 3rem;
+    margin-bottom: 0.6rem;
+    margin-left: 0.3rem;
+}
+.ellipse-dollar-one, .ellipse-dollar-two {
+    width: 1.5rem;
+}
+.ellipse-dollar-container {
+    display: grid;
+    grid-template-columns: repeat(2, 15px);
+    grid-template-rows: repeat(2, 5px);
+    margin-left: 0.5rem;
+}
+.ellipse-dollar-one {
+    margin-top: 0.5rem;
+}
+.ellipse-dollar-two {
+    margin-left: 1rem;
+}
+.ellipse-dollar-text-one, .ellipse-dollar-text-two {
+    @include text("quicksand", 1.15rem);
+    position: absolute;
+    color: #ED654C;
+}
+.ellipse-dollar-text-one {
+    margin-left: 2.87rem;
+    margin-top: -0.45rem;
+    transform: rotate(-15deg);
+}
+.ellipse-dollar-text-two  {
+    margin-left: 0.95rem;
+    transform: rotate(30deg);
+}
+.get-great-loan-title-container {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    @include text("raleway", 1.1rem);
+    font-weight: 600;
+    color: white;
+}
+.get-great-loan-title-two::after {
+    content: url(../img/get-great-loan-arrow.png);
+    margin-left: 0.2rem;
+    
+}
