@@ -30,7 +30,7 @@
 .payment-limit-text {
     display: flex;
     @include text("Raleway", 0.8rem);
-    padding-top: 0.5rem;
+    padding-top: 0.3rem;
     padding-left: 2rem;
     gap: 3rem;
 }
@@ -140,10 +140,7 @@ input:checked + .slider:before {
     background-color: #f4f9fd;
 }
 
-.card-title {
-    position: relative;
-    
-}
+
 
 // swiper
 
@@ -155,10 +152,10 @@ input:checked + .slider:before {
     width: 17rem;
     margin-left: 2rem;
     margin-top: 1rem;
-	img {
-		max-width: 100%;
-		
-	}
+    background-color: #197BBD;
+    height: 11rem;
+    border-radius: 15px;
+    background-image: url(../img/card-background.svg);
 }
 .card-next, .card-prev {
 	top: unset !important;
@@ -175,4 +172,51 @@ input:checked + .slider:before {
 .card-next::after, .card-prev::after {
 	font-size: 25px !important;
     color: #197BBD;
+}
+.card-inside-title {
+    padding-top: 1.3rem;
+    margin-left: 1.3rem;
+    @include text("quicksand", 1rem);
+    font-weight: 700;
+    color: white;
+}
+.card-inside-desc {
+    @include text("lato", 0.5rem);
+    text-transform: uppercase;
+    color: #FFFFFF63;
+    margin-left: 1.3rem;
+    opacity: 0.7;
+}
+.card-number-container {
+    display: flex;
+    gap: 0.7rem;
+    @include text("quicksand", 1.25rem);
+    color: white;
+    margin-left: 1.3rem;
+    font-weight: 500;
+    padding-top: 2.5rem;
+}
+.card-holder-date-container {
+    display: grid;
+    grid-template-areas: 
+    "card-holder-container card-expire-date-container"
+    ;
+    grid-template-columns: repeat(2, 7.5rem);
+    margin-left: 1.3rem;
+    padding-top: 1.8rem;
+    color:white;
+}
+.card-holder-container {
+    grid-area: card-holder-container;
+}
+.card-expire-date-container {
+    grid-area: card-expire-date-container;
+}
+.card-holder-title, .card-expire-date-title {
+    @include text("lato", 0.5rem);
+    font-weight: 500;
+    margin-bottom: 0.2rem
+}
+.card-holder-name, .card-expire-date {
+    @include text("lato", 0.875rem);
 }

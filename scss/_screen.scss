@@ -16,3 +16,13 @@
         height: 43rem;
     }
 }
+@media screen and (max-width:768px) {
+    .card-prev::after, .card-next::after{
+        margin-top: 20rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    .card-next::after, .card-prev::after {
+        margin-top: 20rem;
+    }
+}

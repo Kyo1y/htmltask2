@@ -44,7 +44,7 @@ html {
 }
 
 .nav-name {
-  font-family: "Raleway";
+  font-family: "quicksand";
   font-size: 1.1rem;
   font-weight: 700;
   color: #0F4264;
@@ -195,6 +195,16 @@ html {
     height: 43rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .card-prev::after, .card-next::after {
+    margin-top: 20rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .card-next::after, .card-prev::after {
+    margin-top: 20rem;
+  }
+}
 .account-bar-container {
   display: flex;
   margin: 2.5rem;
@@ -294,7 +304,7 @@ html {
   display: flex;
   font-family: "Raleway";
   font-size: 0.8rem;
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
   padding-left: 2rem;
   gap: 3rem;
 }
@@ -422,10 +432,6 @@ input:checked + .slider:before {
   background-color: #f4f9fd;
 }
 
-.card-title {
-  position: relative;
-}
-
 .swiper-container {
   overflow: hidden;
   width: 20rem;
@@ -435,9 +441,10 @@ input:checked + .slider:before {
   width: 17rem;
   margin-left: 2rem;
   margin-top: 1rem;
-}
-.image-slider__image img {
-  max-width: 100%;
+  background-color: #197BBD;
+  height: 11rem;
+  border-radius: 15px;
+  background-image: url(../img/card-background.svg);
 }
 
 .card-next, .card-prev {
@@ -457,6 +464,64 @@ input:checked + .slider:before {
 .card-next::after, .card-prev::after {
   font-size: 25px !important;
   color: #197BBD;
+}
+
+.card-inside-title {
+  padding-top: 1.3rem;
+  margin-left: 1.3rem;
+  font-family: "quicksand";
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.card-inside-desc {
+  font-family: "lato";
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3882352941);
+  margin-left: 1.3rem;
+  opacity: 0.7;
+}
+
+.card-number-container {
+  display: flex;
+  gap: 0.7rem;
+  font-family: "quicksand";
+  font-size: 1.25rem;
+  color: white;
+  margin-left: 1.3rem;
+  font-weight: 500;
+  padding-top: 2.5rem;
+}
+
+.card-holder-date-container {
+  display: grid;
+  grid-template-areas: "card-holder-container card-expire-date-container";
+  grid-template-columns: repeat(2, 7.5rem);
+  margin-left: 1.3rem;
+  padding-top: 1.8rem;
+  color: white;
+}
+
+.card-holder-container {
+  grid-area: card-holder-container;
+}
+
+.card-expire-date-container {
+  grid-area: card-expire-date-container;
+}
+
+.card-holder-title, .card-expire-date-title {
+  font-family: "lato";
+  font-size: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.card-holder-name, .card-expire-date {
+  font-family: "lato";
+  font-size: 0.875rem;
 }
 
 .transactions-history-container {
